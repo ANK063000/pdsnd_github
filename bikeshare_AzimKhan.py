@@ -168,11 +168,7 @@ def trip_duration_stats(df):
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
-    #df['Start Time'] = pd.to_datetime(df['Start Time'])
-    #df['End Time'] = pd.to_datetime(df['End Time'])
-
     # display total travel time
-    # total_time = (df['End Time'] - df['Start Time']).sum()
     tvl_time = df['Trip Duration'].sum() // 60
     print("Total travel time: ",tvl_time," minutes")
 
@@ -231,7 +227,6 @@ def individual_stats(df):
     ind_prompt1 = input('Would you like to see stats at an individual level?  Y/N\n')
 
     x = 0
-    y = 5
 
     while ind_prompt1.lower() == 'y':
         #Im sure there is a better was to do this with a loop...using brute force here, sorry!
