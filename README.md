@@ -25,14 +25,17 @@ This project explores data related to bike share systems for three major cities 
 * Clone the Project from [here](https://github.com/ANK063000/pdsnd_github)
 
 ### Files Used
-* bikeshare_AzimKhan.py
-* chicago.csv
-* new_york_city.csv
-* washington.csv
+* *bikeshare_AzimKhan.py*
+* *chicago.csv*
+* *new_york_city.csv*
+* *washington.csv*
 
 ### Credits
 Created by [Azim Khan](https://github.com/ANK063000), with the aid of Udacity's [Programming for Data Science](https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104) nanodegree program.
 
+## Log of Changes
+* 1/12/19 [ANK] - Updated README with Table of Contents, Required Software & Instructions
+* 1/12/19 [ANK] - Updated README with additional markdown
 
 <Notes for Azim
 General description of the project or content of the repository.
