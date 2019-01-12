@@ -8,9 +8,9 @@ Exploring US Bikeshare Data
 This project explores data related to bike share systems for three major cities (Chicago, New York City & Washington).  This script allows the user to have an interactive experience to explore the statistics related to the above cities.
 
 ## Table of Contents
-* [Required Software](#required software)
+* [Required Software](#required_software)
 * [Instructions](#instructions)
-* [Files Used](#files used)
+* [Files Used](#files_used)
 * [Credits](#credits)
 
 ## Required Software
@@ -36,6 +36,7 @@ Created by [Azim Khan](https://github.com/ANK063000), with the aid of Udacity's 
 ## Log of Changes
 * 1/12/19 [ANK] - Updated README with Table of Contents, Required Software & Instructions
 * 1/12/19 [ANK] - Updated README with additional markdown
+* 1/12/19 [ANK] - Correcting TOC hyperlinks
 
 <Notes for Azim
 General description of the project or content of the repository.
