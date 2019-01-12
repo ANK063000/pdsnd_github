@@ -168,11 +168,7 @@ def trip_duration_stats(df):
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
-    #df['Start Time'] = pd.to_datetime(df['Start Time'])
-    #df['End Time'] = pd.to_datetime(df['End Time'])
-
     # display total travel time
-    # total_time = (df['End Time'] - df['Start Time']).sum()
     tvl_time = df['Trip Duration'].sum() // 60
     print("Total travel time: ",tvl_time," minutes")
 
@@ -228,12 +224,11 @@ def individual_stats(df):
     """Displays statistics on bikeshare users."""
 
     # Prompt user if they want to see invdividual stats
-    ind_prompt1 = input('Would you like to see stats at an individual level?  Enter yes or no. \n').lower()
+    ind_prompt1 = input('Would you like to see stats at an individual level?  Y/N\n')
 
     x = 0
-    y = 5
 
-    while ind_prompt1 == 'yes':
+    while ind_prompt1.lower() == 'y':
         #Im sure there is a better was to do this with a loop...using brute force here, sorry!
         #I dont like seeing the data as a DataFrame and prefer a Series
         print('\n',df.loc[x])
@@ -256,9 +251,9 @@ def individual_stats(df):
         x += 1
         print('-'*40)
 
-        ind_promt2 = input('\nWould you like to see the next 5?  Enter yes or no.\n').lower()
+        ind_promt2 = input('\nWould you like to see the next 5?  Y/N\n')
 
-        if ind_promt2 != 'yes':
+        if ind_promt2.lower() != 'y':
             break
 
 def main():
@@ -272,8 +267,8 @@ def main():
         user_stats(df)
         individual_stats(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        restart = input('\nWould you like to restart? Y/N.\n')
+        if restart.lower() != 'y':
             break
 
 if __name__ == "__main__":
